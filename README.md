@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-System-Status-Uptime-Monitoring/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-System-Status-Uptime-Monitoring?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-System-Status-Uptime-Monitoring/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-System-Status-Uptime-Monitoring?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-System-Status-Uptime-Monitoring/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-System-Status-Uptime-Monitoring?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-System-Status-Uptime-Monitoring/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square" alt="License: CC0-1.0" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -66,9 +66,9 @@ Commercial, cloud-hosted System Status and Uptime Monitoring platforms, sorted i
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven System Status and Uptime Monitoring tools, sorted in **descending order by GitHub star count**.
+Self-hosted, community-driven System Status and Uptime Monitoring tools, sorted in **descending order by GitHub Stars_Count**.
 
-### 1. Uptime Kuma [![GitHub stars](https://img.shields.io/github/stars/louislam/uptime-kuma?style=social&color=white)](https://github.com/louislam/uptime-kuma/stargazers)
+### 1. Uptime Kuma [![GitHub_Stars](https://img.shields.io/github/stars/louislam/uptime-kuma?style=social&color=white)](https://github.com/louislam/uptime-kuma/stargazers)
 - **Repository:** [louislam/uptime-kuma](https://github.com/louislam/uptime-kuma)
 - **Stack:** 🟢 Node.js / Vue.js / SQLite | **License:** MIT
 - **Overview:** Uptime Kuma is the most widely-used self-hosted uptime monitor in the world, frequently described as an open-source UptimeRobot alternative. It supports HTTP(s), TCP, Ping, DNS, Keyword, Steam Game Server, and Docker container monitoring.
@@ -78,7 +78,7 @@ Self-hosted, community-driven System Status and Uptime Monitoring tools, sorted 
 
 ---
 
-### 2. Upptime [![GitHub stars](https://img.shields.io/github/stars/upptime/upptime?style=social&color=white)](https://github.com/upptime/upptime/stargazers)
+### 2. Upptime [![GitHub_Stars](https://img.shields.io/github/stars/upptime/upptime?style=social&color=white)](https://github.com/upptime/upptime/stargazers)
 - **Repository:** [upptime/upptime](https://github.com/upptime/upptime)
 - **Stack:** 🐙 GitHub Actions / Svelte / Markdown | **License:** MIT
 - **Overview:** An open-source uptime monitor and status page powered entirely by GitHub Actions, GitHub Issues, and GitHub Pages. It requires zero server setup and zero hosting maintenance.
@@ -88,7 +88,7 @@ Self-hosted, community-driven System Status and Uptime Monitoring tools, sorted 
 
 ---
 
-### 3. Cachet [![GitHub stars](https://img.shields.io/github/stars/cachethq/cachet?style=social&color=white)](https://github.com/cachethq/cachet/stargazers)
+### 3. Cachet [![GitHub_Stars](https://img.shields.io/github/stars/cachethq/cachet?style=social&color=white)](https://github.com/cachethq/cachet/stargazers)
 - **Repository:** [cachethq/cachet](https://github.com/cachethq/cachet)
 - **Stack:** 🐘 PHP / Laravel / MySQL / PostgreSQL / SQLite | **License:** BSD-3-Clause (v2) / SSPL (v3)
 - **Overview:** Cachet is one of the classic, battle-tested open-source status page systems built for organizations wanting a traditional customer-facing portal.
@@ -98,7 +98,7 @@ Self-hosted, community-driven System Status and Uptime Monitoring tools, sorted 
 
 ---
 
-### 4. Gatus [![GitHub stars](https://img.shields.io/github/stars/TwiN/gatus?style=social&color=white)](https://github.com/TwiN/gatus/stargazers)
+### 4. Gatus [![GitHub_Stars](https://img.shields.io/github/stars/TwiN/gatus?style=social&color=white)](https://github.com/TwiN/gatus/stargazers)
 - **Repository:** [TwiN/gatus](https://github.com/TwiN/gatus)
 - **Stack:** 🔵 Go / SQLite or PostgreSQL / Prometheus | **License:** Apache-2.0
 - **Overview:** Gatus is a lightweight, developer-first automated health dashboard configured entirely through a declarative YAML configuration file.
@@ -108,7 +108,7 @@ Self-hosted, community-driven System Status and Uptime Monitoring tools, sorted 
 
 ---
 
-### 5. Checkmate [![GitHub stars](https://img.shields.io/github/stars/bluewave-labs/Checkmate?style=social&color=white)](https://github.com/bluewave-labs/Checkmate/stargazers)
+### 5. Checkmate [![GitHub_Stars](https://img.shields.io/github/stars/bluewave-labs/Checkmate?style=social&color=white)](https://github.com/bluewave-labs/Checkmate/stargazers)
 - **Repository:** [bluewave-labs/Checkmate](https://github.com/bluewave-labs/Checkmate)
 - **Stack:** ⚡ Node.js / TypeScript / React / Docker | **License:** AGPL-3.0
 - **Overview:** Checkmate is a modern, self-hosted tool designed to track and monitor server hardware, website uptime, response times, and incidents in real time with sleek visualizations.
@@ -118,7 +118,7 @@ Self-hosted, community-driven System Status and Uptime Monitoring tools, sorted 
 
 ---
 
-### 6. OpenStatus [![GitHub stars](https://img.shields.io/github/stars/openstatusHQ/openstatus?style=social&color=white)](https://github.com/openstatusHQ/openstatus/stargazers)
+### 6. OpenStatus [![GitHub_Stars](https://img.shields.io/github/stars/openstatusHQ/openstatus?style=social&color=white)](https://github.com/openstatusHQ/openstatus/stargazers)
 - **Repository:** [openstatusHQ/openstatus](https://github.com/openstatusHQ/openstatus)
 - **Stack:** ⚛️ Next.js / TypeScript / Tailwind CSS / Tinybird | **License:** AGPL-3.0
 - **Overview:** OpenStatus is a modern, open-source status page, incident management, and synthetic uptime monitoring platform built for indie creators and modern engineering teams.
@@ -128,7 +128,7 @@ Self-hosted, community-driven System Status and Uptime Monitoring tools, sorted 
 
 ---
 
-### 7. OneUptime [![GitHub stars](https://img.shields.io/github/stars/oneuptime/oneuptime?style=social&color=white)](https://github.com/oneuptime/oneuptime/stargazers)
+### 7. OneUptime [![GitHub_Stars](https://img.shields.io/github/stars/oneuptime/oneuptime?style=social&color=white)](https://github.com/oneuptime/oneuptime/stargazers)
 - **Repository:** [oneuptime/oneuptime](https://github.com/oneuptime/oneuptime)
 - **Stack:** 🐳 TypeScript / Node.js / Docker / Kubernetes | **License:** Open Source (Fair Source / Business Source)
 - **Overview:** OneUptime is an all-in-one open-source observability suite designed as a comprehensive replacement for Datadog, PagerDuty, and Statuspage combined.
@@ -138,7 +138,7 @@ Self-hosted, community-driven System Status and Uptime Monitoring tools, sorted 
 
 ---
 
-### 8. Kener [![GitHub stars](https://img.shields.io/github/stars/rajnandan1/kener?style=social&color=white)](https://github.com/rajnandan1/kener/stargazers)
+### 8. Kener [![GitHub_Stars](https://img.shields.io/github/stars/rajnandan1/kener?style=social&color=white)](https://github.com/rajnandan1/kener/stargazers)
 - **Repository:** [rajnandan1/kener](https://github.com/rajnandan1/kener)
 - **Stack:** 🔶 SvelteKit / Node.js / SQLite or PostgreSQL | **License:** MIT
 - **Overview:** Kener is a sleek, batteries-included open-source status page with native incident lifecycle management and automated uptime monitoring.
@@ -148,7 +148,7 @@ Self-hosted, community-driven System Status and Uptime Monitoring tools, sorted 
 
 ---
 
-### 9. cState [![GitHub stars](https://img.shields.io/github/stars/cstate/cstate?style=social&color=white)](https://github.com/cstate/cstate/stargazers)
+### 9. cState [![GitHub_Stars](https://img.shields.io/github/stars/cstate/cstate?style=social&color=white)](https://github.com/cstate/cstate/stargazers)
 - **Repository:** [cstate/cstate](https://github.com/cstate/cstate)
 - **Stack:** 🦫 Hugo / Static Site Generator / Go | **License:** MIT
 - **Overview:** cState is an ultra-fast, static, serverless status page theme built on Hugo. It uses minimal HTML, CSS, and vanilla JS with zero server runtimes required.
@@ -158,7 +158,7 @@ Self-hosted, community-driven System Status and Uptime Monitoring tools, sorted 
 
 ---
 
-### 10. Cloudflare Workers Status Page [![GitHub stars](https://img.shields.io/github/stars/eidam/cf-workers-status-page?style=social&color=white)](https://github.com/eidam/cf-workers-status-page/stargazers)
+### 10. Cloudflare Workers Status Page [![GitHub_Stars](https://img.shields.io/github/stars/eidam/cf-workers-status-page?style=social&color=white)](https://github.com/eidam/cf-workers-status-page/stargazers)
 - **Repository:** [eidam/cf-workers-status-page](https://github.com/eidam/cf-workers-status-page)
 - **Stack:** ☁️ Cloudflare Workers / KV Storage / CRON Triggers | **License:** MIT
 - **Overview:** A completely serverless status page and monitoring solution deployed globally on Cloudflare’s edge network using Cloudflare Workers, KV, and CRON Triggers.
@@ -168,7 +168,7 @@ Self-hosted, community-driven System Status and Uptime Monitoring tools, sorted 
 
 ---
 
-### 11. StatPing.ng [![GitHub stars](https://img.shields.io/github/stars/statping-ng/statping-ng?style=social&color=white)](https://github.com/statping-ng/statping-ng/stargazers)
+### 11. StatPing.ng [![GitHub_Stars](https://img.shields.io/github/stars/statping-ng/statping-ng?style=social&color=white)](https://github.com/statping-ng/statping-ng/stargazers)
 - **Repository:** [statping-ng/statping-ng](https://github.com/statping-ng/statping-ng)
 - **Stack:** 🐹 Go / Docker / SQLite or PostgreSQL | **License:** GPL-3.0
 - **Overview:** A community-maintained drop-in fork of the original Statping project, providing an all-in-one Go binary combining active HTTP/TCP monitoring with an interactive status page.
@@ -178,7 +178,7 @@ Self-hosted, community-driven System Status and Uptime Monitoring tools, sorted 
 
 ---
 
-### 12. Kuvasz Uptime [![GitHub stars](https://img.shields.io/github/stars/kuvasz-uptime/kuvasz?style=social&color=white)](https://github.com/kuvasz-uptime/kuvasz/stargazers)
+### 12. Kuvasz Uptime [![GitHub_Stars](https://img.shields.io/github/stars/kuvasz-uptime/kuvasz?style=social&color=white)](https://github.com/kuvasz-uptime/kuvasz/stargazers)
 - **Repository:** [kuvasz-uptime/kuvasz](https://github.com/kuvasz-uptime/kuvasz)
 - **Stack:** ☕ Kotlin / Micronaut / Docker | **License:** Open Source
 - **Overview:** Kuvasz is a performant, API-first uptime and SSL certificate monitor equipped with brandable status pages, Infrastructure-as-Code support, and Prometheus metrics export.
@@ -220,7 +220,7 @@ Contributions are warmly welcomed! If you know of a stellar open-source status p
 
 1. 🍴 Fork this repository.
 2. 🌿 Create a feature branch: `git checkout -b feat/add-new-tool`.
-3. 📝 Add the project details (name, GitHub repo URL, star badge, tech stack, license, and stand-out capabilities).
+3. 📝 Add the project details (name, GitHub repo URL, Stars_Badge, tech stack, license, and stand-out capabilities).
 4. 🚀 Open a Pull Request with a clear description!
 
 ---
