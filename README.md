@@ -1,27 +1,50 @@
-# Awesome-System-Status-Uptime-Monitoring
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome System Status &amp; Uptime Monitoring Banner" width="100%" />
+</p>
 
-# Awesome System Status & Uptime Monitoring
+# 🌐 Awesome System Status & Uptime Monitoring
 
-> A curated list of top System Status and Uptime Monitoring platforms — both SaaS/Hosted commercial solutions and open-source alternatives for tracking service availability and communicating incidents to users.
-> 🌟 Star this repo if you find it useful! 🌟
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-System-Status-Uptime-Monitoring/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-System-Status-Uptime-Monitoring?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-System-Status-Uptime-Monitoring/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-System-Status-Uptime-Monitoring?style=social" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-System-Status-Uptime-Monitoring/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square" alt="License: CC0-1.0" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 🚀 **A curated directory of top System Status and Uptime Monitoring platforms** — covering both commercial SaaS solutions and powerful self-hosted, open-source alternatives for monitoring website availability, tracking uptime SLAs, sending incident notifications, and communicating service health to customers.
 
 ---
 
-## 📋 Table of Contents
+## 📑 Table of Contents
 
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-- [Open-Source Software](#-open-source-software)
-  - [Uptime Kuma](#uptime-kuma)
-  - [Gatus](#gatus)
-  - [OneUptime](#oneuptime)
-  - [Kener](#kener)
-  - [Cachet](#cachet)
-  - [cState](#cstate)
-  - [StatPing.ng](#statpingng)
-  - [Openstatus](#openstatus)
-  - [Kuvasz Uptime](#kuvasz-uptime)
-- [Comparison at a Glance](#-comparison-at-a-glance)
-- [Contributing](#-contributing)
+- [📈 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🟦 SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [🟩 Open-Source Software](#-open-source-software)
+  - [1. Uptime Kuma](#1-uptime-kuma-)
+  - [2. Upptime](#2-upptime-)
+  - [3. Cachet](#3-cachet-)
+  - [4. Gatus](#4-gatus-)
+  - [5. Checkmate](#5-checkmate-)
+  - [6. OpenStatus](#6-openstatus-)
+  - [7. OneUptime](#7-oneuptime-)
+  - [8. Kener](#8-kener-)
+  - [9. cState](#9-cstate-)
+  - [10. Cloudflare Workers Status Page](#10-cloudflare-workers-status-page-)
+  - [11. StatPing.ng](#11-statpingng-)
+  - [12. Kuvasz Uptime](#12-kuvasz-uptime-)
+- [📊 Feature Comparison at a Glance](#-feature-comparison-at-a-glance)
+- [🤝 Contributing](#-contributing)
+- [💖 Support](#-support)
+- [⭐ Star History](#-star-history)
+- [📄 License](#-license)
+
+---
+
+## 📈 Sector Overview & Market Dynamics
+
+The dedicated status page and uptime monitoring software sector represents an estimated **$400M–$500M market**, expanding rapidly at a **~12.5% CAGR** towards an overarching **$7.5B+ broader server, synthetic, and digital experience monitoring market**. Rather than an extreme winner-take-all monopoly, the sector exhibits **moderate fragmentation**: high-end enterprise procurement heavily consolidates around legacy incumbents like Atlassian Statuspage and Freshworks, while mid-market teams, independent developers, and privacy-conscious organizations drive surging demand for agile all-in-one alternatives (like Better Stack) and rich self-hosted open-source solutions.
 
 ---
 
@@ -29,7 +52,7 @@
 
 Commercial, cloud-hosted System Status and Uptime Monitoring platforms, sorted in descending order by company size (valuation / annual revenue).
 
-| Platform | Company Size (Valuation / Revenue) | Starting Paid Price | Free Tier / Trial Limit | Key Focus & Strengths | Primary Trade-offs |
+| 🏢 Platform | 💰 Company Size (Valuation / Revenue) | 🏷️ Starting Paid Price | 🎁 Free Tier / Trial Limit | 💡 Key Focus & Strengths | ⚠️ Primary Trade-offs |
 |---|---|---|---|---|---|
 | **Atlassian Statuspage** | ~$40B–$55B market cap / ~$4.4B–$5.2B ARR | $29/mo (Hobby plan) | **Free forever plan**: Up to 100 subscribers, 2 team members, 2 metrics, 25 components, email & Slack/Teams notifications | Industry-standard incumbent with deep integrations (Datadog, New Relic, PagerDuty, Jira, Slack). Built-in incident workflows and subscriber management. | High pricing at scale; subscriber notifications paywalled on low tiers; SAML SSO enterprise-only. |
 | **Freshstatus** (Freshworks) | ~$3.5B–$4.5B market cap / ~$720M–$840M ARR | $19/agent/mo (Freshservice Starter; legacy was $0) | **Free forever plan**: Up to 250 subscribers, unlimited services/components, custom domain support, email & Slack alerts | Deep native integration into the Freshworks ecosystem (Freshdesk/Freshservice); generous free tier allowances. | Standalone product transitioned into Freshservice suite; limited standalone monitoring depth. |
@@ -43,92 +66,183 @@ Commercial, cloud-hosted System Status and Uptime Monitoring platforms, sorted i
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven System Status and Uptime Monitoring tools. The open-source ecosystem spans **monitoring-first tools with status pages**, **status-page-first tools**, and **full incident lifecycle platforms**.
+Self-hosted, community-driven System Status and Uptime Monitoring tools, sorted in **descending order by GitHub star count**.
 
-### Uptime Kuma
-**Stack:** Node.js / SQLite | **License:** MIT  
-Uptime Kuma is the most popular self-hosted uptime monitor, often described as an open-source UptimeRobot alternative [citation:8]. It supports HTTP(s), TCP, ping, DNS, and keyword monitoring with **78+ notification providers** (the largest alerting ecosystem in the category) [citation:14]. It includes a built-in status page and a polished web UI. **Trade-off:** Primarily a monitoring tool; its status page is functional but less feature-rich than dedicated status page platforms, and it lacks incident management workflows [citation:14].  
-**Best for:** Teams wanting a proven, easy-to-deploy uptime monitor with a built-in status page and the broadest notification coverage.
-
-### Gatus
-**Stack:** Go / PostgreSQL or SQLite | **License:** Apache-2.0  
-Gatus is a developer-oriented health dashboard with **10k+ GitHub stars**, configured entirely via YAML [citation:11][citation:5]. It monitors HTTP, ICMP, TCP, DNS, GraphQL, and TLS certificate expiry, exports Prometheus metrics, and alerts to Slack, Discord, Teams, PagerDuty, and 20+ providers [citation:11]. The YAML config is version-controlled and GitOps-friendly, with every monitor reviewable as a pull request [citation:11]. **Trade-off:** No admin UI (all configuration via YAML), no incident management or maintenance scheduling, and no subscriber notifications [citation:14].  
-**Best for:** DevOps teams wanting GitOps-native monitoring with Prometheus integration and minimal resource usage (~10 MB RAM at idle).
-
-### OneUptime
-**Stack:** Docker / Kubernetes | **License:** Open Source  
-OneUptime is the "everything platform": monitoring, status pages, on-call, incident management, and logs in one project [citation:2]. It can replace several paid tools at once, but expects you to be comfortable with Docker or Kubernetes and a real chunk of resources [citation:2]. **Trade-off:** On a small VPS it is the wrong tool; it is heavier than single-binary alternatives and intended for platform teams already running Kubernetes [citation:2].  
-**Best for:** Platform teams wanting one open-source system to own the entire incident lifecycle (monitoring, on-call, status page, logs).
-
-### Kener
-**Stack:** SvelteKit / Node.js / SQLite or PostgreSQL | **License:** MIT  
-Kener is a status page with **full incident management lifecycle**, 11 active monitoring types, maintenance windows (with RRULE), and subscriber email notifications [citation:14]. It has an admin dashboard with RBAC (3 roles), 17+ REST API endpoints, i18n support, and embeddable widgets (badges, bars, charts) [citation:14]. **Trade-off:** Smaller community than Uptime Kuma or Gatus, and its monitoring depth is less than dedicated monitoring tools [citation:14].  
-**Best for:** Teams wanting a balanced open-source status page with incident management, monitoring, and subscriber notifications in one tool.
-
-### Cachet
-**Stack:** PHP / Laravel / MySQL/PostgreSQL/SQLite | **License:** BSD-3 (2.x) / Custom source-available (3.x)  
-Cachet is the long-running PHP-based status page system [citation:3]. **Important caveat:** The 3.x rebuild is still in development with no stable release; the newest tagged stable release remains v2.4.1 from 2023, and the v3 branch ships under a custom source-available license rather than the BSD one 2.x carried [citation:2]. It is a **page-first** tool: v3 added a basic HTTP check, but you schedule it yourself and a failure colours a component rather than opening an incident, so in practice you still feed it from elsewhere [citation:2].  
-**Best for:** PHP teams wanting a traditional status page with a dashboard, accepting slow development and the lack of built-in active monitoring.
-
-### cState
-**Stack:** Hugo (static) | **License:** MIT  
-cState is a static status page for Hugo: clean design, minimal JS, super light HTML/CSS, high customization, optional admin panel, and a read-only API [citation:8]. It is **purely a communication page** — there is no active monitoring; incidents are created via Markdown files or a CMS [citation:14]. Best used with Netlify or Docker.  
-**Best for:** Teams that already have monitoring elsewhere and need a fast, serverless incident communication page with no runtime dependencies.
-
-### StatPing.ng
-**Stack:** Go / Docker | **License:** GPL-3.0  
-StatPing.ng is a community-kept fork of the older Statping, a single Go binary that does both monitoring and a status page [citation:2][citation:8]. It automatically fetches the application and renders a status page. **Trade-off:** Smaller community behind it than Uptime Kuma or Gatus [citation:2].  
-**Best for:** Teams wanting a single-binary tool that combines basic monitoring with a status page, accepting a smaller community.
-
-### Openstatus
-**Stack:** AGPL-3.0 / Docker | **License:** AGPL-3.0  
-Openstatus is fully open source and can be self-hosted (the checker runs as an 8.5MB Docker image) or used as managed SaaS [citation:6]. It is used by open-source projects like Cal.com, Documenso, Hanko, and OpenPanel for transparent uptime data, with subscriber notifications via email, RSS/Atom, and JSON [citation:6]. The free plan includes one monitor, one status page, and 6 regions [citation:6].  
-**Best for:** Open-source projects and small teams wanting an open-source status page with a free managed tier and community subscriptions.
-
-### Kuvasz Uptime
-**Stack:** Kotlin / Docker | **License:** Open Source  
-Kuvasz is a performant uptime and SSL monitoring service with brandable status pages, Infrastructure-as-Code support, Prometheus integration, and a complete REST API [citation:8]. It supports per-monitor notification channels (Slack, Discord, Telegram, PagerDuty, MS Teams, Google Chat), Prometheus and OpenTelemetry exporters, maintenance windows, and an MCP server for AI assistant integration.  
-**Best for:** Teams wanting a modern, API-driven uptime monitor with brandable status pages and strong notification/integration support.
+### 1. Uptime Kuma [![GitHub stars](https://img.shields.io/github/stars/louislam/uptime-kuma?style=social&color=white)](https://github.com/louislam/uptime-kuma/stargazers)
+- **Repository:** [louislam/uptime-kuma](https://github.com/louislam/uptime-kuma)
+- **Stack:** 🟢 Node.js / Vue.js / SQLite | **License:** MIT
+- **Overview:** Uptime Kuma is the most widely-used self-hosted uptime monitor in the world, frequently described as an open-source UptimeRobot alternative. It supports HTTP(s), TCP, Ping, DNS, Keyword, Steam Game Server, and Docker container monitoring.
+- **Key Features:** **78+ notification providers** (Telegram, Discord, Slack, Webhook, Pushover, Email, etc.), multi-language UI, ping charts, certificate expiry tracking, MFA/2FA, and built-in incident status pages.
+- **Trade-off:** Focused on monitoring checks; its status page layout is clean but lacks complex multi-stage incident management workflows.
+- **Best For:** Developers and homelabbers seeking an easy-to-deploy, modern uptime monitor with extensive alerting.
 
 ---
 
-## 📊 Comparison at a Glance
+### 2. Upptime [![GitHub stars](https://img.shields.io/github/stars/upptime/upptime?style=social&color=white)](https://github.com/upptime/upptime/stargazers)
+- **Repository:** [upptime/upptime](https://github.com/upptime/upptime)
+- **Stack:** 🐙 GitHub Actions / Svelte / Markdown | **License:** MIT
+- **Overview:** An open-source uptime monitor and status page powered entirely by GitHub Actions, GitHub Issues, and GitHub Pages. It requires zero server setup and zero hosting maintenance.
+- **Key Features:** Runs automated cron checks every 5 minutes using GitHub Actions, records response time history in git commits, uses GitHub Issues for incident postmortems, and automatically builds a static status page hosted on GitHub Pages.
+- **Trade-off:** Subject to GitHub Actions rate limits and scheduling jitter; minimum check interval is capped around 5 minutes.
+- **Best For:** Open-source projects and small SaaS teams who want a 100% free, serverless, maintenance-free status page.
 
-| Software | License | Type | Monitoring | Status Page | Incident Mgmt | Self-Hosted | Best For |
-|----------|---------|------|------------|-------------|---------------|-------------|----------|
-| **Atlassian Statuspage** | Proprietary | Status page | (Integrations) | ✅ | ✅ | ❌ | Enterprise procurement |
-| **Better Stack** | Proprietary | Bundled suite | ✅ | ✅ | ✅ On-call | ❌ | Indie/mid-market consolidation |
-| **Instatus** | Proprietary | Status page | (Integrations) | ✅ | ✅ | ❌ | Affordable Statuspage alt |
-| **Statuspal** | Proprietary | Status page | (Integrations) | ✅ | ✅ | ❌ | Subscriber management |
-| **Hund** | Proprietary | Status page | (Integrations) | ✅ | ✅ | ❌ | Component-heavy services |
-| **Uptime Kuma** | MIT | Monitoring + page | ✅ | ✅ Basic | ❌ | ✅ | Broad alerting + simple page |
-| **Gatus** | Apache-2.0 | Monitoring + page | ✅ | ✅ Basic | ❌ | ✅ | GitOps-native monitoring |
-| **OneUptime** | Open Source | Full lifecycle | ✅ | ✅ | ✅ On-call | ✅ | K8s platform teams |
-| **Kener** | MIT | Status page + monitor | ✅ | ✅ | ✅ | ✅ | Balanced OSS status page |
-| **Cachet** | BSD/SSPL | Status page | (Basic check) | ✅ | ✅ | ✅ | PHP traditional page |
-| **cState** | MIT | Static page | ❌ | ✅ | (Markdown) | ✅ (Static) | Serverless communication |
-| **Openstatus** | AGPL-3.0 | Status page + monitor | ✅ | ✅ | ✅ | ✅ | Open-source projects |
-| **Kuvasz** | Open Source | Uptime + SSL | ✅ | ✅ | (Maintenance) | ✅ | API-driven monitoring |
+---
+
+### 3. Cachet [![GitHub stars](https://img.shields.io/github/stars/cachethq/cachet?style=social&color=white)](https://github.com/cachethq/cachet/stargazers)
+- **Repository:** [cachethq/cachet](https://github.com/cachethq/cachet)
+- **Stack:** 🐘 PHP / Laravel / MySQL / PostgreSQL / SQLite | **License:** BSD-3-Clause (v2) / SSPL (v3)
+- **Overview:** Cachet is one of the classic, battle-tested open-source status page systems built for organizations wanting a traditional customer-facing portal.
+- **Key Features:** Granular service components, scheduled maintenance management, multi-step incident reporting (Investigating, Identified, Watching, Fixed), two-factor authentication (2FA), and comprehensive REST API.
+- **Trade-off:** Version 2.x maintenance has slowed down, while the v3 rewrite is ongoing with custom licensing. Does not feature extensive native automated monitoring out of the box (primarily fed via external checks or APIs).
+- **Best For:** PHP/Laravel environments needing a standalone incident communication portal.
+
+---
+
+### 4. Gatus [![GitHub stars](https://img.shields.io/github/stars/TwiN/gatus?style=social&color=white)](https://github.com/TwiN/gatus/stargazers)
+- **Repository:** [TwiN/gatus](https://github.com/TwiN/gatus)
+- **Stack:** 🔵 Go / SQLite or PostgreSQL / Prometheus | **License:** Apache-2.0
+- **Overview:** Gatus is a lightweight, developer-first automated health dashboard configured entirely through a declarative YAML configuration file.
+- **Key Features:** Monitors HTTP, ICMP, TCP, DNS, GraphQL, and TLS certificate expiration. Exports Prometheus metrics, integrates with 20+ notification channels (Slack, Discord, Teams, PagerDuty), and consumes negligible system memory (~10MB RAM at idle).
+- **Trade-off:** No web-based configuration UI (GitOps/YAML only); does not feature manual incident scheduling or subscriber email newsletters.
+- **Best For:** DevOps and SRE teams wanting a GitOps-native, code-reviewed monitoring system with Prometheus export.
+
+---
+
+### 5. Checkmate [![GitHub stars](https://img.shields.io/github/stars/bluewave-labs/Checkmate?style=social&color=white)](https://github.com/bluewave-labs/Checkmate/stargazers)
+- **Repository:** [bluewave-labs/Checkmate](https://github.com/bluewave-labs/Checkmate)
+- **Stack:** ⚡ Node.js / TypeScript / React / Docker | **License:** AGPL-3.0
+- **Overview:** Checkmate is a modern, self-hosted tool designed to track and monitor server hardware, website uptime, response times, and incidents in real time with sleek visualizations.
+- **Key Features:** Server hardware stats (CPU, RAM, Disk) combined with uptime monitoring, interactive incident tracking, fast dashboard UI, and rich notification integrations.
+- **Trade-off:** Newer project compared to long-standing tools; rapid ongoing development cycle.
+- **Best For:** Teams wanting combined server infrastructure health metrics and uptime monitoring in one unified dashboard.
+
+---
+
+### 6. OpenStatus [![GitHub stars](https://img.shields.io/github/stars/openstatusHQ/openstatus?style=social&color=white)](https://github.com/openstatusHQ/openstatus/stargazers)
+- **Repository:** [openstatusHQ/openstatus](https://github.com/openstatusHQ/openstatus)
+- **Stack:** ⚛️ Next.js / TypeScript / Tailwind CSS / Tinybird | **License:** AGPL-3.0
+- **Overview:** OpenStatus is a modern, open-source status page, incident management, and synthetic uptime monitoring platform built for indie creators and modern engineering teams.
+- **Key Features:** Multi-region synthetic monitoring probes (via global Edge locations), beautiful public/private status pages, incident timeline creation, and subscriber notifications via email and RSS feeds.
+- **Trade-off:** Self-hosting the full distributed stack requires multiple moving parts (Next.js, database, analytics engine); also provides a managed cloud tier.
+- **Best For:** Open-source teams wanting a cutting-edge aesthetic with global multi-region response time checks.
+
+---
+
+### 7. OneUptime [![GitHub stars](https://img.shields.io/github/stars/oneuptime/oneuptime?style=social&color=white)](https://github.com/oneuptime/oneuptime/stargazers)
+- **Repository:** [oneuptime/oneuptime](https://github.com/oneuptime/oneuptime)
+- **Stack:** 🐳 TypeScript / Node.js / Docker / Kubernetes | **License:** Open Source (Fair Source / Business Source)
+- **Overview:** OneUptime is an all-in-one open-source observability suite designed as a comprehensive replacement for Datadog, PagerDuty, and Statuspage combined.
+- **Key Features:** Bundles uptime monitoring, status pages, on-call alert scheduling with escalation policies, incident management, telemetry logs, and APM tracing into a unified enterprise platform.
+- **Trade-off:** Resource-heavy deployment requiring Docker Compose or Kubernetes; overkill for simple single-server setups.
+- **Best For:** Platform engineering teams wanting to self-host their entire incident and observability lifecycle.
+
+---
+
+### 8. Kener [![GitHub stars](https://img.shields.io/github/stars/rajnandan1/kener?style=social&color=white)](https://github.com/rajnandan1/kener/stargazers)
+- **Repository:** [rajnandan1/kener](https://github.com/rajnandan1/kener)
+- **Stack:** 🔶 SvelteKit / Node.js / SQLite or PostgreSQL | **License:** MIT
+- **Overview:** Kener is a sleek, batteries-included open-source status page with native incident lifecycle management and automated uptime monitoring.
+- **Key Features:** 11 active monitoring check types, maintenance windows with RRULE recurring support, incident timeline tracking, RBAC admin dashboard, multi-language i18n, embeddable status widgets, and subscriber notifications.
+- **Trade-off:** Community is smaller than Uptime Kuma; active monitoring configurations are tied to its status page structure.
+- **Best For:** Organizations looking for an out-of-the-box, balanced status page with integrated active monitoring and incident workflows.
+
+---
+
+### 9. cState [![GitHub stars](https://img.shields.io/github/stars/cstate/cstate?style=social&color=white)](https://github.com/cstate/cstate/stargazers)
+- **Repository:** [cstate/cstate](https://github.com/cstate/cstate)
+- **Stack:** 🦫 Hugo / Static Site Generator / Go | **License:** MIT
+- **Overview:** cState is an ultra-fast, static, serverless status page theme built on Hugo. It uses minimal HTML, CSS, and vanilla JS with zero server runtimes required.
+- **Key Features:** Sub-second load times, Netlify/GitHub Pages/Vercel zero-cost deployment, CMS support (Decap/Netlify CMS), read-only JSON API, and custom status badge generation.
+- **Trade-off:** Purely an incident communication page with no automated background monitoring engine (incidents are published via markdown files).
+- **Best For:** Engineering teams that already monitor systems via third-party alerts and require a resilient, serverless status page that stays online even when their core infrastructure is down.
+
+---
+
+### 10. Cloudflare Workers Status Page [![GitHub stars](https://img.shields.io/github/stars/eidam/cf-workers-status-page?style=social&color=white)](https://github.com/eidam/cf-workers-status-page/stargazers)
+- **Repository:** [eidam/cf-workers-status-page](https://github.com/eidam/cf-workers-status-page)
+- **Stack:** ☁️ Cloudflare Workers / KV Storage / CRON Triggers | **License:** MIT
+- **Overview:** A completely serverless status page and monitoring solution deployed globally on Cloudflare’s edge network using Cloudflare Workers, KV, and CRON Triggers.
+- **Key Features:** Automatic multi-location uptime checks via CRON triggers, daily operational history, zero server maintenance, Slack/Discord/Telegram incident alerts, and low latency worldwide.
+- **Trade-off:** Tied specifically to the Cloudflare Workers ecosystem; historical metrics are limited by Cloudflare KV write frequencies.
+- **Best For:** Cloudflare users seeking a fast, zero-server-cost uptime status page.
+
+---
+
+### 11. StatPing.ng [![GitHub stars](https://img.shields.io/github/stars/statping-ng/statping-ng?style=social&color=white)](https://github.com/statping-ng/statping-ng/stargazers)
+- **Repository:** [statping-ng/statping-ng](https://github.com/statping-ng/statping-ng)
+- **Stack:** 🐹 Go / Docker / SQLite or PostgreSQL | **License:** GPL-3.0
+- **Overview:** A community-maintained drop-in fork of the original Statping project, providing an all-in-one Go binary combining active HTTP/TCP monitoring with an interactive status page.
+- **Key Features:** Built-in mobile-friendly status page, interactive charts, notification handlers (Slack, Discord, Twilio, Webhooks), and custom plugins.
+- **Trade-off:** Smaller maintainer team compared to primary active projects; legacy codebase architecture.
+- **Best For:** Users familiar with Statping looking for single-binary self-hosted simplicity.
+
+---
+
+### 12. Kuvasz Uptime [![GitHub stars](https://img.shields.io/github/stars/kuvasz-uptime/kuvasz?style=social&color=white)](https://github.com/kuvasz-uptime/kuvasz/stargazers)
+- **Repository:** [kuvasz-uptime/kuvasz](https://github.com/kuvasz-uptime/kuvasz)
+- **Stack:** ☕ Kotlin / Micronaut / Docker | **License:** Open Source
+- **Overview:** Kuvasz is a performant, API-first uptime and SSL certificate monitor equipped with brandable status pages, Infrastructure-as-Code support, and Prometheus metrics export.
+- **Key Features:** Multi-channel alerting (Slack, Discord, Telegram, PagerDuty, MS Teams), OpenTelemetry & Prometheus telemetry, maintenance window definitions, and an MCP (Model Context Protocol) server for AI assistant integration.
+- **Trade-off:** Emerging project with a smaller ecosystem and user base.
+- **Best For:** Java/Kotlin shops and platform teams requiring an API-driven monitor with native MCP support.
+
+---
+
+## 📊 Feature Comparison at a Glance
+
+| 🛠️ Platform | 📜 License | 🗂️ Architecture Type | 🔍 Uptime Monitoring | 📢 Status Page | 🚨 Incident Mgmt | 🖥️ Self-Hosted | 🎯 Ideal Use Case |
+|---|---|---|:---:|:---:|:---:|:---:|---|
+| **Atlassian Statuspage** | Proprietary | Commercial SaaS | 🔌 Integrations | ✅ | ✅ | ❌ | High-budget enterprise procurement |
+| **Freshstatus** | Proprietary | Commercial SaaS | 🔌 Freshservice | ✅ | ✅ | ❌ | Freshworks suite integration |
+| **Better Stack** | Proprietary | Commercial SaaS | ✅ Built-in | ✅ | ✅ On-call | ❌ | Indie/mid-market bundled monitoring |
+| **StatusCast** | Proprietary | Commercial SaaS | 🔌 Integrations | ✅ | ✅ | ❌ | Enterprise internal employee IT status |
+| **Statuspal** | Proprietary | Commercial SaaS | 🔌 Integrations | ✅ | ✅ | ❌ | Advanced multi-language subscriber alerts |
+| **Instatus** | Proprietary | Commercial SaaS | ✅ Built-in | ✅ | ✅ | ❌ | High-speed, affordable Statuspage alternative |
+| **Hund** | Proprietary | Commercial SaaS | ✅ Built-in | ✅ | ✅ | ❌ | Complex multi-component architectures (50+ services) |
+| **Uptime Kuma** | MIT | Open Source | ✅ Built-in | ✅ Basic | ❌ | ✅ | Most popular self-hosted monitor |
+| **Upptime** | MIT | Open Source / Serverless | ✅ GitHub Actions | ✅ | ✅ Issues | ✅ (GitHub) | Zero-maintenance, free status page |
+| **Cachet** | BSD/SSPL | Open Source | 🔌 Basic / Manual | ✅ | ✅ | ✅ | Traditional PHP/Laravel status portal |
+| **Gatus** | Apache-2.0 | Open Source | ✅ Built-in | ✅ Basic | ❌ | ✅ | GitOps-driven YAML monitoring & Prometheus |
+| **Checkmate** | AGPL-3.0 | Open Source | ✅ Built-in | ✅ | ✅ | ✅ | Server hardware stats + uptime monitoring |
+| **OpenStatus** | AGPL-3.0 | Open Source | ✅ Edge Synthetic | ✅ | ✅ | ✅ | Modern Next.js stack with global probes |
+| **OneUptime** | Open Source | Open Source | ✅ Full APM | ✅ | ✅ On-call | ✅ | Kubernetes platform teams (Datadog/PagerDuty alt) |
+| **Kener** | MIT | Open Source | ✅ Built-in | ✅ | ✅ | ✅ | Balanced out-of-the-box status page |
+| **cState** | MIT | Open Source / Static | ❌ Manual | ✅ | 📝 Markdown | ✅ (Static) | Static Hugo serverless communication page |
+| **Cloudflare Workers** | MIT | Open Source / Edge | ✅ Cron Trigger | ✅ | 📝 KV History | ✅ (Cloudflare) | Serverless edge status page on Cloudflare |
+| **StatPing.ng** | GPL-3.0 | Open Source | ✅ Built-in | ✅ | ✅ | ✅ | Single Go binary deployment |
+| **Kuvasz Uptime** | Open Source | Open Source | ✅ Built-in | ✅ | 🗓️ Maintenance | ✅ | API-driven Kotlin monitor with MCP server |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source System Status or Uptime Monitoring tool that should be listed here, please open a pull request with:
+Contributions are warmly welcomed! If you know of a stellar open-source status page or uptime monitoring tool that should be featured:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
+1. 🍴 Fork this repository.
+2. 🌿 Create a feature branch: `git checkout -b feat/add-new-tool`.
+3. 📝 Add the project details (name, GitHub repo URL, star badge, tech stack, license, and stand-out capabilities).
+4. 🚀 Open a Pull Request with a clear description!
 
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem **splits** between monitoring-first tools with basic status pages (Uptime Kuma, Gatus), status-page-first tools (Cachet, cState, Kener), and full incident lifecycle platforms (OneUptime). Uptime Kuma is the most popular entry point for uptime monitoring with a built-in page, while Kener offers the most balanced open-source status page with incident management and monitoring in one tool. Gatus is the strongest choice for DevOps teams wanting YAML/GitOps-native configuration.
+---
+
+## 💖 Support
+
+If this curated collection saved you time or helped you build a more reliable infrastructure, please consider showing your support:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork and share** it with your engineering and DevOps team.
+- ☕ **Buy me a coffee & support ongoing maintenance** via the [Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support keeps this guide fresh, accurate, and actively updated! 🙏✨
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-System-Status-Uptime-Monitoring&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-System-Status-Uptime-Monitoring&type=date&legend=top-left)
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
-
----
-
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+This repository and curated list are released under the [Creative Commons Zero v1.0 Universal (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/) Public Domain Dedication. All listed software products, logos, and platforms remain the property and copyright of their respective owners.

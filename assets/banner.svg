@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Filter for Glow Effects -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(1.08); }
+    }
+    @keyframes waveMove {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-400px); }
+    }
+    @keyframes floatOrb {
+      0%, 100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-12px) translateX(10px); }
+    }
+    @keyframes pingStatus {
+      0% { r: 5; opacity: 1; }
+      75%, 100% { r: 14; opacity: 0; }
+    }
+    @keyframes scanLine {
+      0% { transform: translateX(-200px); }
+      100% { transform: translateX(1300px); }
+    }
+    .orb-1 { animation: floatOrb 8s ease-in-out infinite; }
+    .pulse-dot { animation: pingStatus 2s cubic-bezier(0, 0, 0.2, 1) infinite; }
+    .waveform { animation: waveMove 12s linear infinite; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="20" fill="url(#bg-grad)" />
+  <rect width="1198" height="358" x="1" y="1" rx="19" fill="none" stroke="#334155" stroke-opacity="0.4" stroke-width="1.5" />
+
+  <!-- Subtle Technical Grid Lines in Background -->
+  <g opacity="0.08" stroke="#38bdf8" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="200" y1="0" x2="200" y2="360" />
+    <line x1="400" y1="0" x2="400" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="800" y1="0" x2="800" y2="360" />
+    <line x1="1000" y1="0" x2="1000" y2="360" />
+  </g>
+
+  <!-- Dynamic Ambient Glow Orbs -->
+  <circle cx="180" cy="80" r="140" fill="#38bdf8" opacity="0.12" filter="url(#glow)" class="orb-1" />
+  <circle cx="1020" cy="260" r="160" fill="#10b981" opacity="0.12" filter="url(#glow)" class="orb-1" />
+  <circle cx="920" cy="70" r="100" fill="#818cf8" opacity="0.1" filter="url(#glow)" />
+
+  <!-- Animated Heartbeat / Latency Waveform along the bottom -->
+  <g opacity="0.35">
+    <path class="waveform" d="M -400 310 Q -350 310 -320 310 L -300 270 L -280 340 L -260 290 L -240 310 L 0 310 Q 50 310 80 310 L 100 270 L 120 340 L 140 290 L 160 310 L 400 310 Q 450 310 480 310 L 500 270 L 520 340 L 540 290 L 560 310 L 800 310 Q 850 310 880 310 L 900 270 L 920 340 L 940 290 L 960 310 L 1200 310 Q 1250 310 1280 310 L 1300 270 L 1320 340 L 1340 290 L 1360 310 L 1600 310" 
+          fill="none" stroke="url(#glow-grad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Scanning Light Beam Effect -->
+  <g opacity="0.2">
+    <line x1="0" y1="310" x2="150" y2="310" stroke="#34d399" stroke-width="4" filter="url(#soft-glow)">
+      <animateTransform attributeName="transform" type="translate" from="-200,0" to="1200,0" dur="4s" repeatCount="indefinite" />
+    </line>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header Status Pill -->
+  <g transform="translate(600, 52)">
+    <!-- Pill Container -->
+    <rect x="-170" y="-18" width="340" height="36" rx="18" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="1.2" />
+    <!-- Animated Status Indicator Dot -->
+    <circle cx="-138" cy="0" r="5" fill="#10b981" />
+    <circle cx="-138" cy="0" r="5" fill="#10b981" class="pulse-dot" />
+    <!-- Status Text -->
+    <text x="-120" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#a7f3d0" letter-spacing="0.5">
+      SYSTEM STATUS: ALL SYSTEMS OPERATIONAL
+    </text>
+  </g>
+
+  <!-- MAIN FOREGROUND TITLE -->
+  <text x="600" y="142" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', Helvetica, Arial, sans-serif" font-size="46" font-weight="900" fill="url(#title-grad)" letter-spacing="-1">
+    Awesome System Status &amp; Uptime Monitoring
+  </text>
+
+  <!-- SUBTITLE -->
+  <text x="600" y="185" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#94a3b8" letter-spacing="0.2">
+    Curated SaaS &amp; Open-Source Platforms for Availability, Incident Management &amp; Latency Tracking
+  </text>
+
+  <!-- FOREGROUND INTERACTIVE BADGES / METRIC PILLS -->
+  <g transform="translate(600, 245)">
+    <!-- Metric Pill 1: 99.99% Uptime -->
+    <g transform="translate(-370, 0)">
+      <rect x="0" y="0" width="165" height="42" rx="10" fill="url(#card-grad)" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1" />
+      <text x="18" y="26" font-family="monospace" font-size="14" fill="#38bdf8" font-weight="bold">⚡ 99.99%</text>
+      <text x="92" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#cbd5e1">SLA Target</text>
+    </g>
+
+    <!-- Metric Pill 2: Open Source & Self-Hosted -->
+    <g transform="translate(-185, 0)">
+      <rect x="0" y="0" width="175" height="42" rx="10" fill="url(#card-grad)" stroke="#34d399" stroke-opacity="0.3" stroke-width="1" />
+      <text x="16" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#34d399" font-weight="bold">🛡️ Open Source</text>
+      <text x="122" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#cbd5e1">&amp; Self-Host</text>
+    </g>
+
+    <!-- Metric Pill 3: Instant Alerting -->
+    <g transform="translate(10, 0)">
+      <rect x="0" y="0" width="175" height="42" rx="10" fill="url(#card-grad)" stroke="#818cf8" stroke-opacity="0.3" stroke-width="1" />
+      <text x="16" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#818cf8" font-weight="bold">🔔 Real-time</text>
+      <text x="105" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#cbd5e1">Alerting</text>
+    </g>
+
+    <!-- Metric Pill 4: Incident Lifecycles -->
+    <g transform="translate(205, 0)">
+      <rect x="0" y="0" width="165" height="42" rx="10" fill="url(#card-grad)" stroke="#fbbf24" stroke-opacity="0.3" stroke-width="1" />
+      <text x="16" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#fbbf24" font-weight="bold">📊 Incident</text>
+      <text x="88" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#cbd5e1">Workflows</text>
+    </g>
+  </g>
+</svg>
