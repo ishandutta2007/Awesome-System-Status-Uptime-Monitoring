@@ -10,13 +10,6 @@
 ## 📋 Table of Contents
 
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Atlassian Statuspage](#atlassian-statuspage)
-  - [Better Stack](#better-stack)
-  - [Instatus](#instatus)
-  - [Statuspal](#statuspal)
-  - [Hund](#hund)
-  - [StatusCast](#statuscast)
-  - [Freshstatus](#freshstatus)
 - [Open-Source Software](#-open-source-software)
   - [Uptime Kuma](#uptime-kuma)
   - [Gatus](#gatus)
@@ -34,35 +27,17 @@
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted System Status and Uptime Monitoring platforms. These are not open-source but are included as reference points for feature comparison.
+Commercial, cloud-hosted System Status and Uptime Monitoring platforms, sorted in descending order by company size (valuation / annual revenue).
 
-### Atlassian Statuspage
-**Type:** Industry-standard status page with deep integrations  
-Statuspage is the recognized incumbent, with an integration ecosystem that is its primary moat (Datadog, New Relic, PagerDuty, Slack, Jira, GitHub, and auto-incident creation from monitoring tools) [citation:1]. Features include components and component groups, incident workflow (investigating → identified → monitoring → resolved), scheduled maintenance, and subscriber management [citation:1]. **Trade-off:** Pricing feels expensive at indie scale, and subscriber notifications are paywalled on lower tiers; SAML SSO is Enterprise-only [citation:1]. Best suited for organizations above ~$5M ARR selling to enterprise procurement that specifically recognizes the Atlassian brand [citation:1].
-
-### Better Stack
-**Type:** Bundled monitoring, on-call, and status page  
-Better Stack (formerly Better Uptime) is the 2026 indie default because it bundles uptime monitoring, on-call scheduling, log management, and a status page into one vendor [citation:1]. Pricing includes a free tier (10 monitors, 1 status page), Team at $29/mo+ (unlimited status pages, on-call, 30s checks), and Enterprise custom [citation:1]. The on-call feature alone replaces a separate PagerDuty subscription [citation:1]. **Trade-off:** Log management at scale (over 100GB/mo) can get expensive compared to dedicated tools, and some enterprise procurement still specifically wants Statuspage [citation:1].
-
-### Instatus
-**Type:** Fast, affordable Statuspage alternative  
-Instatus was built explicitly as a Statuspage alternative, with page-load speed as a brag (sub-100ms first paint) and pricing cheaper than Statuspage at every tier: free, Starter $20/mo, Pro $50/mo, Business $300/mo [citation:1]. Features include components, scheduled maintenance, incident postmortems, subscriber management (email, SMS, webhook, RSS, Slack, Teams, Discord), white-label, custom domain, and auto-calculated uptime stats [citation:1]. **Trade-off:** Smaller monitoring integration ecosystem than Statuspage, and less recognized in enterprise procurement [citation:1].
-
-### Statuspal
-**Type:** Cost-effective alternative with strong subscriber management  
-Statuspal is positioned as the cost-effective alternative to Statuspage for SMB and lower-mid-market teams, typically 50–70% below equivalent Statuspage tiers [citation:7]. Its differentiator is subscriber management: segmentation, audience-specific pages, and granular notification preferences [citation:7]. **Trade-off:** Smaller brand recognition, smaller integration ecosystem, and a lean team that means a narrower product surface than Statuspage or Better Stack [citation:7].
-
-### Hund
-**Type:** Depth-first status page for component-heavy services  
-Hund is the quietly-better status page for engineering teams with many components (50+ services). Its component model is genuinely thoughtful: groups, regions, sub-components with nested dependencies, and a granular incident state machine (investigating, identified, monitoring, resolved, plus custom states) [citation:7]. Pricing starts at $30/mo+ scaling by components [citation:1]. **Trade-off:** Low brand recognition (the team has not invested in growth marketing), smaller integration ecosystem, and overkill for teams with fewer than 10 components [citation:1][citation:7].
-
-### StatusCast
-**Type:** Internal IT status pages  
-StatusCast focuses on internal, employee-facing IT status pages rather than public customer-facing pages. It is enterprise-priced and suited for organizations needing to communicate internal service disruptions to staff.
-
-### Freshstatus
-**Type:** Status page from Freshworks  
-Freshstatus is Freshworks' status page offering, integrated with the broader Freshworks suite. It provides components, incident communication, and subscriber notifications for teams already in the Freshworks ecosystem.
+| Platform | Company Size (Valuation / Revenue) | Starting Paid Price | Free Tier / Trial Limit | Key Focus & Strengths | Primary Trade-offs |
+|---|---|---|---|---|---|
+| **Atlassian Statuspage** | ~$40B–$55B market cap / ~$4.4B–$5.2B ARR | $29/mo (Hobby plan) | **Free forever plan**: Up to 100 subscribers, 2 team members, 2 metrics, 25 components, email & Slack/Teams notifications | Industry-standard incumbent with deep integrations (Datadog, New Relic, PagerDuty, Jira, Slack). Built-in incident workflows and subscriber management. | High pricing at scale; subscriber notifications paywalled on low tiers; SAML SSO enterprise-only. |
+| **Freshstatus** (Freshworks) | ~$3.5B–$4.5B market cap / ~$720M–$840M ARR | $19/agent/mo (Freshservice Starter; legacy was $0) | **Free forever plan**: Up to 250 subscribers, unlimited services/components, custom domain support, email & Slack alerts | Deep native integration into the Freshworks ecosystem (Freshdesk/Freshservice); generous free tier allowances. | Standalone product transitioned into Freshservice suite; limited standalone monitoring depth. |
+| **Better Stack** | ~$93M valuation / ~$3.8M ARR | $29/mo (Team plan) | **Free forever plan**: 1 status page (custom domain & dark mode), 10 uptime monitors (3-min checks), 10 heartbeats, email & Slack alerts | Bundles uptime monitoring, on-call scheduling, log management, and status pages into one cohesive vendor. Sub-30s checks on paid plans. | High-volume log storage (>100GB/mo) gets pricey; enterprise procurement sometimes requires Atlassian specifically. |
+| **StatusCast** | ~$1.1M estimated ARR (Acquired by 4me / Xurrent) | $39/mo (Starter plan) | **14-day free trial**: Full access to status page features, multi-channel alerts, and ITSM integrations (no credit card required) | Specializes in employee-facing internal IT status pages, enterprise ITSM integrations, and audience segmentation. | Geared primarily toward internal corporate IT rather than public developer-facing status pages. |
+| **Statuspal** | ~$550K estimated ARR | $46/mo (Hobby plan) | **14-day free trial**: Up to 10 monitored services, 5 team members, 500 subscribers, full public status page features | Advanced subscriber management, multi-language pages, granular audience segmentation, and cost-effective SMB pricing. | Smaller third-party monitoring integration catalog; lean team with narrower feature scope than enterprise suites. |
+| **Instatus** | ~$297K estimated ARR | $20/mo (Pro plan) | **Free forever plan**: Up to 200 email subscribers, 15 monitors (2-min checks), 5 team members, 2 on-call members (`instatus.com` domain) | Extremely fast page load speeds (sub-100ms first paint), clean modern UI, affordable custom domain upgrade at $20/mo. | Smaller integration ecosystem; lacks deep enterprise governance and complex incident workflows. |
+| **Hund** | Bootstrapped / Profitable (<$1M ARR) | $29/mo (20 components base) | **30-day free trial**: Full access to component dependency modeling, watchdog monitoring, and status page features (no credit card required) | Deep component hierarchy (groups, regions, sub-components, nested dependencies) and granular state machines for 50+ services. | Lower brand recognition; minimal growth marketing; overkill for simple services (<10 components). |
 
 ---
 
